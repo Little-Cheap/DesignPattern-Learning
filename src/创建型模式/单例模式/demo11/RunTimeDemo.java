@@ -2,6 +2,7 @@ package 创建型模式.单例模式.demo11;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.ArrayList;
 
 /**
  * @Author: 邓国龙
@@ -17,5 +18,8 @@ public class RunTimeDemo {
         byte[] bytes = new byte[1024 * 1024 * 100];
         int read = inputStream.read(bytes);
         System.out.println(new String(bytes,0,read,"GBK"));
+        ArrayList<Object> list = new ArrayList<>();
+        list.add("11");
+        list.ensureCapacity(2);
     }
 }
