@@ -18,6 +18,7 @@ public class Test {
         List<String> collect = list.stream().filter(str -> {
             return !str.isBlank();
         }).toList();
+        System.out.println("1111111111");
         System.out.println(collect);
     }
 }
